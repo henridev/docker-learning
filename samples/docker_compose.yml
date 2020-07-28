@@ -5,9 +5,9 @@ services:
     container_name: postgres_container
     image: postgres:latest
     environment:
-      - POSTGRES_DB=smtr
-      - POSTGRES_USER=u_smtr_rw
-      - POSTGRES_PASSWORD=usmtrrw
+      - POSTGRES_DB=test
+      - POSTGRES_USER=postgres
+      - POSTGRES_PASSWORD=postgres
     volumes:
       - ./smart-tracer-api/migrations/init:/docker-entrypoint-initdb.d/
     ports:
